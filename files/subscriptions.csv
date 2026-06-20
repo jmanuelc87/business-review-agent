@@ -1,0 +1,19 @@
+account_id,product,plan_tier,seats,monthly_price
+ACME,Nimbus Core,Enterprise,247,20900.0
+ACME,Nimbus Analytics,Enterprise,135,11400.0
+ACME,Nimbus Connect (API),Enterprise,67,5700.0
+GLOBEX,Nimbus Core,Enterprise,165,14850.0
+GLOBEX,Nimbus Analytics,Enterprise,90,8100.0
+GLOBEX,Nimbus Connect (API),Enterprise,45,4050.0
+INITECH,Nimbus Core,Pro,66,5225.0
+INITECH,Nimbus Analytics,Pro,36,2850.0
+INITECH,Nimbus Connect (API),Pro,18,1425.0
+UMBRELLA,Nimbus Core,Pro,44,3300.0
+UMBRELLA,Nimbus Analytics,Pro,24,1800.0
+UMBRELLA,Nimbus Connect (API),Pro,12,900.0
+SOYLENT,Nimbus Core,Enterprise,286,22550.0
+SOYLENT,Nimbus Analytics,Enterprise,156,12300.0
+SOYLENT,Nimbus Connect (API),Enterprise,78,6150.0
+HOOLI,Nimbus Core,Enterprise,143,12100.0
+HOOLI,Nimbus Analytics,Enterprise,78,6600.0
+HOOLI,Nimbus Connect (API),Enterprise,39,3300.0

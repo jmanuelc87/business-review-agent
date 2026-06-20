@@ -1,0 +1,7 @@
+account_id,name,industry,country,region,segment,csm_owner,contract_start,renewal_quarter,seats_contracted
+ACME,Acme Corporation,Manufactura,México,LATAM,Enterprise,Valeria Núñez,2023-02-01,Q3-2026,450
+GLOBEX,Globex S.A.,Retail,México,LATAM,Enterprise,Diego Hernández,2022-09-15,Q4-2026,300
+INITECH,Initech,Tecnología,Colombia,LATAM,Mid-Market,Diego Hernández,2024-01-10,Q1-2027,120
+UMBRELLA,Umbrella Corp,Salud,España,EMEA,Mid-Market,Valeria Núñez,2026-01-05,Q1-2027,80
+SOYLENT,Soylent Industries,Alimentos y Bebidas,México,LATAM,Enterprise,Diego Hernández,2021-06-01,Q2-2027,520
+HOOLI,Hooli,Tecnología,Chile,LATAM,Enterprise,Valeria Núñez,2023-11-20,Q3-2026,260

@@ -1,0 +1,11 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "context_retriever": "./app/context_retriever.py:app",
+        "data_analyst": "./app/data_analyst.py:app",
+        "main": "./app/router.py:app"
+    },
+    "env": "./.venv"
+}
