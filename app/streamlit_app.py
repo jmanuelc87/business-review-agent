@@ -32,7 +32,7 @@ def run_graph(graph_input):
         )
 
 
-st.title("QBR Agent")
+st.title("Business Review Agent")
 
 
 for m in st.session_state.messages:

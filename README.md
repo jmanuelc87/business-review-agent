@@ -1,4 +1,4 @@
-# Business Review Agent
+# Business Review Agent (DEMO for Cognitactix webinar)
 
 A multi-agent AI system that generates executive Quarterly Business Reviews (QBR) by combining structured data analysis with qualitative context retrieval. Built with LangGraph, LangChain, and Streamlit.
 
@@ -10,21 +10,24 @@ The agent answers questions about account health by routing each query to the ri
 - **Context Retriever** — RAG over support tickets and account notes stored in ChromaDB, with Tavily web search as fallback
 - **Router** — classifies the query, fans out to one or both agents in parallel, then synthesizes a unified answer
 
-```
-User Query
-    │
-    ▼
-Router Agent (classifies → sub-questions)
-    │
-    ├──────────────────────────────────┐
-    ▼                                  ▼
-Data Analyst Agent            Context Retriever Agent
-(Text-to-SQL → SQLite)        (RAG → ChromaDB + Tavily)
-    │                                  │
-    └──────────────┬───────────────────┘
-                   ▼
-           Synth Agent
-       (unified final answer)
+
+```mermaid
+flowchart TD
+    user[User query]
+    router["`**Router Agent**
+    classifies sub-questions`"]
+    analyst["`**Data Analyst Agent**
+    Text-to-SQL -> SQLite`"]
+    retriever["`**Context Retriever Agent**
+    RAG -> ChromaDB + Tavily`"]
+    synth["`**Synth Agent**
+    Unified final answer`"]
+
+    user --> router
+    router --> analyst
+    router --> retriever
+    analyst --> synth
+    retriever --> synth
 ```
 
 ## Demo Dataset
