@@ -36,15 +36,18 @@ sql_query_tool = next(t for t in toolkit.get_tools() if t.name == "sql_db_query"
 def db_query_with_interrupt(query: str) -> str:
     """Run a SQL query against the database after human review."""
 
-    # user_approval = interrupt(
-    #     {
-    #         "question": "Do you want to execute the following query? [y/n]",
-    #         "tool": "sql_db_query",
-    #         "args": {"query": query},
-    #     }
-    # )
+    result = interrupt(
+        {
+            "question": "Do you want to execute the following query? [y/n]",
+            "tool": "sql_db_query",
+            "args": {"query": query},
+        }
+    )
 
-    return sql_query_tool.invoke({"query": query})
+    if result["approve"].lower() == "y":
+        return sql_query_tool.invoke({"query": result["query"]})
+    else:
+        return "Query execution canceled by the user."
 
 
 SYSTEM_PROMPT = """

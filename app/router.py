@@ -11,6 +11,8 @@ from pydantic import BaseModel, Field
 
 from langchain.agents import create_agent
 from langchain.agents.middleware import dynamic_prompt
+from langgraph.checkpoint.memory import InMemorySaver
+from langgraph.store.memory import InMemoryStore
 from langgraph.graph import StateGraph
 from langgraph.types import Send
 
@@ -190,4 +192,7 @@ workflow.add_edge("data_analyst", "synthesize")
 workflow.add_edge("synthesize", "__end__")
 
 
-app = workflow.compile()
+checkpointer = InMemorySaver()
+store = InMemoryStore()
+
+app = workflow.compile(checkpointer=checkpointer, store=store)
