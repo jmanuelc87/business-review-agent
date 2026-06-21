@@ -40,7 +40,10 @@ def db_query_with_interrupt(query: str) -> str:
         {
             "question": "Do you want to execute the following query? [y/n]",
             "tool": "sql_db_query",
-            "args": {"query": query},
+            "args": {
+                "query": query,
+                "type": "query",
+            },
         }
     )
 

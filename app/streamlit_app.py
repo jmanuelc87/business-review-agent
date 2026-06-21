@@ -47,7 +47,7 @@ if st.session_state.pending_review:
         st.markdown(f"**{payload['question']}**")
         edited = st.text_area(
             "Edit the draft, then submit",
-            value=payload["args"]["query"],
+            value=payload["args"][payload["args"]["type"]],
             height=220,
             key="review_box",
         )
@@ -63,7 +63,12 @@ if st.session_state.pending_review:
                 {"role": "user", "content": "*(approved the draft as-is)*"}
             )
             run_graph(
-                Command(resume={"approve": "y", "query": payload["args"]["query"]})
+                Command(
+                    resume={
+                        "approve": "y",
+                        "query": payload["args"][payload["args"]["type"]],
+                    }
+                )
             )
             st.rerun()
 
