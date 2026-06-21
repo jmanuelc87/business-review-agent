@@ -192,7 +192,7 @@ def web_search(state):
     question = state["question"]
     documents = state["documents"]
 
-    searched = web_search_tool.invoke({"query": question})
+    searched = web_search_tool.invoke({"query": question[-1]["text"]})
 
     web_results = "\\n".join([d["content"] for d in searched["results"]])
     web_results = Document(page_content=web_results)
