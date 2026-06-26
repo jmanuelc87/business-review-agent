@@ -59,6 +59,6 @@ buena a la demo: muestra por qué necesitas *ambos* agentes.
 - "¿Hay alguna cuenta con churn silencioso?" → Hooli (nota lo explica).
 
 **La pregunta capstone (necesita los dos):**
-- *"Genera el business review del Q2-2026: identifica las cuentas en riesgo, con los números que lo respaldan y la explicación de qué está pasando en cada una."*
+- "Genera el business review del Q2-2026: identifica las cuentas en riesgo, con los números que lo respaldan y la explicación de qué está pasando en cada una."
   → el analista trae la caída de Acme y de Hooli (números); el RAG explica el porqué;
   el redactor sintetiza el informe.

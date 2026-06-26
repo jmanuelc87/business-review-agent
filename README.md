@@ -95,12 +95,6 @@ Load the `text-embedding-nomic-embed-text-v1.5` model and start the local server
 uv run streamlit run app/streamlit_app.py
 ```
 
-### LangGraph dev server
-
-```bash
-uv run langgraph dev
-```
-
 The `langgraph.json` exposes three graphs: `main` (router), `context_retriever`, and `data_analyst`.
 
 ## Example Queries
