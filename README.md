@@ -100,15 +100,15 @@ The `langgraph.json` exposes three graphs: `main` (router), `context_retriever`,
 ## Example Queries
 
 **Structured (Data Analyst):**
-- "Which accounts had a revenue drop from Q1 to Q2 2026?"
-- "Show the percentage change in active users per account between Q1 and Q2."
-- "Which accounts renew in Q3-2026 and what is their health score?"
-- "Top 3 accounts by P1 ticket volume in Q2."
+- Which accounts had a revenue drop from Q1 to Q2 2026?
+- Show the percentage change in active users per account between Q1 and Q2.
+- Which accounts renew in Q3-2026 and what is their health score?
+- Top 3 accounts by P1 ticket volume in Q2.
 
 **Qualitative (Context Retriever):**
-- "Why did the Acme account decline this quarter?"
-- "What issue is concentrated in Initech's tickets?"
-- "Is there any account showing silent churn?"
+- Why did the Acme account decline this quarter?
+- What issue is concentrated in Initech's tickets?
+- Is there any account showing silent churn?
 
 **Both agents (capstone):**
-- "Generate the Q2-2026 business review: identify at-risk accounts with the numbers that support it and explain what is happening in each one."
+- Generate the Q2-2026 business review: identify at-risk accounts with the numbers that support it and explain what is happening in each one.
